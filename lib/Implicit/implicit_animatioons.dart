@@ -1,9 +1,12 @@
 import 'package:animations/Implicit/animated_align.dart';
 import 'package:animations/Implicit/animated_container.dart';
+import 'package:animations/Implicit/animated_defult_textstyle.dart';
 import 'package:animations/Implicit/animated_opacity.dart';
 import 'package:animations/Implicit/animated_padding.dart';
 import 'package:animations/Implicit/animated_size.dart';
 import 'package:animations/Implicit/animted_crossfade.dart';
+import 'package:animations/Implicit/animted_possitioned.dart';
+import 'package:animations/Implicit/hero_animation.dart';
 import 'package:flutter/material.dart';
 
 class ImplicitAnimatioons extends StatefulWidget {
@@ -21,6 +24,9 @@ class _ImplicitAnimatioonsState extends State<ImplicitAnimatioons> {
     'AnimatedAlign',
     'AnimatedCrossfade',
     'AnimatedSize',
+    'AnimatedPositioned',
+    'HeroAnimation',
+    'AnimatedDefaultTextstyle',
   ];
   List<Widget> pageswidget(String title) => [
         AnimatedContainerWidget(title: title),
@@ -29,6 +35,9 @@ class _ImplicitAnimatioonsState extends State<ImplicitAnimatioons> {
         AnimatedAlignWidget(title: title),
         AnimatedCrossfadeWidget(title: title),
         AnimatedSizeWidget(title: title),
+        AnimatedPositionedWidget(title: title),
+        HeroAnimationWidget(title: title),
+        AnimatedDefultTextstyleWidget(titel: title),
       ];
 
   @override
